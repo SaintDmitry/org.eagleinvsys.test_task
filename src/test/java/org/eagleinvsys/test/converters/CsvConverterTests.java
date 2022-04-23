@@ -24,10 +24,10 @@ class CsvConverterTests {
     @Test
     void convert_test() {
         Set<String> headers = new LinkedHashSet<>();
-        headers.add("1 header");
+        headers.add("1 header\n");
         headers.add("2 header");
         headers.add("3 header");
-        headers.add("4 header");
+        headers.add("4 header\r");
         List<ConvertibleMessage> records = getRecords(headers, 3);
 
         ConvertibleCollection convertibleCollection = new ConvertibleCollectionImpl(headers, records);

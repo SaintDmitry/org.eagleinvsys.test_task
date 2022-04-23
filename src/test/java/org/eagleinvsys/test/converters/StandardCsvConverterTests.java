@@ -28,7 +28,6 @@ class StandardCsvConverterTests {
         assertTrue(result.contains("1 header record 2;2 header record 2;3 header record 2;4 header record 2;"));
         assertTrue(result.contains("1 header record 3;2 header record 3;3 header record 3;4 header record 3;"));
         assertEquals(3, StringUtils.countMatches(result, "\n"));
-        assertEquals(0, StringUtils.countMatches(result, "\r"));
     }
 
     @Test
